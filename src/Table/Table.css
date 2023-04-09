@@ -1,0 +1,9 @@
+table {
+    border-collapse: collapse;
+  }
+  
+table tr {
+    border-bottom: 1px solid lightgray;
+}
+  
+#table-wrapper::-webkit-scrollbar {display:none;}
