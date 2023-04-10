@@ -1,5 +1,5 @@
 import React from 'react'
-import {Search as SearchIcon} from '@mui/icons-material'
+import { SearchOutlined } from '@ant-design/icons'
 
 export const Search = () => {
 
@@ -16,7 +16,7 @@ export const Search = () => {
 
     return (
         <div style={searchStyle}>
-            <SearchIcon fontSize='large' sx={{ color:'#898B8E'}}/>
+            <SearchOutlined sx={{ color:'#898B8E'}} style={{fontSize: 24}}/>
             <input style={{all: "unset", fontSize: 20, width: "100%"}} placeholder={"Search"}/>
         </div>
     )

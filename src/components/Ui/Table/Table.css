@@ -5,5 +5,9 @@ table {
 table tr {
     border-bottom: 1px solid lightgray;
 }
+
+table tr:hover {
+  background-color: #edf9fc;
+}
   
 #table-wrapper::-webkit-scrollbar {display:none;}

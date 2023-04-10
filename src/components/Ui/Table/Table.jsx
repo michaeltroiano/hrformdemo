@@ -1,9 +1,8 @@
 import React from 'react'
 import './Table.css'
-import { Pill } from '../Pill'
 
 export const Table = (props) => {
-    const { data } = props
+    const { data, tableDataFilter } = props
 
   
     const headerStyle = {
@@ -46,10 +45,10 @@ export const Table = (props) => {
                         })}
                     </tr>
                     {data.map((row, ii) => {
-                        return <tr key={ii} style={rowStyle}>
+                        return <tr key={ii} style={rowStyle} >
                             {Object.keys(row).map((key, iii) => {
-                                return <td key={iii} style={dataStyle}>
-                                    {key == "Status" ? <><Pill value={row[key]} color={row[key] == "Complete" ? "success" : "warning"} /></> : row[key]}
+                                return <td key={iii} style={dataStyle} >
+                                    {tableDataFilter(row, key)}
                                 </td>
                             })}
                         </tr>

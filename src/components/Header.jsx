@@ -1,6 +1,6 @@
 import React from 'react'
-import { Edit } from '@mui/icons-material'
-import { Pill } from './Pill'
+import { EditOutlined } from '@ant-design/icons'
+import { Pill } from './Ui/Pill'
 
 export const Header = () => {
 
@@ -24,7 +24,7 @@ export const Header = () => {
     return (
         <div style={headerStyle}>
             <div style={{display: "flex", alignItems: "center"}}>
-                <Edit fontSize='large' style={{ paddingRight: 10}}/>
+                <EditOutlined fontSize='large' style={{ paddingRight: 10}}/>
                 HR Form Pro
             </div>
             <Pill value={"Contact Us"} color="link" style={{maxHeight: 20, fontSize: 15}}/>

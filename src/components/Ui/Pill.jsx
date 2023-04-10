@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const Pill = (props) => {
-    const { value, type, color, style } = props
+    const { value, color, style } = props
 
     const pillStyle = {
         display: "flex",
